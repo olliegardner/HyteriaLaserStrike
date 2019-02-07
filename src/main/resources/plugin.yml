@@ -1,0 +1,12 @@
+name: HyteriaLaserStrike
+author: Ollie_2411
+version: 1.0
+description: Laser Strike
+main: me.ollie_2411.hyterialaserstrike.HyteriaLaserStrike
+depend: [WorldGuard, WorldEdit, NametagEdit]
+
+commands:
+  laser:
+    description:
+  leave:
+    description: Leave your current game

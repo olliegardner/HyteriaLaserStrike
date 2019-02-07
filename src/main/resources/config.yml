@@ -1,0 +1,97 @@
+# the permissions
+permissions:
+  # permission to use /laser
+  laser: "ls.laser"
+  perks:
+    grenade: "ls.perks.grenade"
+    mine: "ls.perks.mine"
+    invisibility: "ls.perks.invisibility"
+    invincibility: "ls.perks.invincibility"
+
+# messages
+messages:
+  arenaFull: "&cArena full"
+  inGame: "&cYou are already in a game"
+  joinArena: "&e<player> &ahas joined the game &e<players>&a/&e<max>"
+  command: "&cYou can't run this command whilst in game. Use &4/leave &cto leave the game"
+  leftGame: "&aYou have left the game"
+  leftArena: "&e<player> &ahas left the game &e<players>&a/&e<max>"
+  countdown: "&7&lGame starting in &6&l<seconds> seconds"
+  gameStarted: "&a&lStarting game"
+  notInGame: "&cYou aren't in a game"
+  kill: "&6&l<killer> &7&lhas killed &6&l<target>"
+  noAmmo: "&cNo ammo left, go back to spawn to recharge"
+  killstreak: "&a<player> &7is on a &a<kills> &7killstreak"
+  doubleKill: "&b<player> &7has scored a &bdouble kill&7!"
+  tripleKill: "&b<player> &7has scored a &btriple kill&7!"
+  # the winGame message will broadcast to all online players, use \n for a new line
+  winGame: "&6--------------------------------- \n &a<team> have won in the <arena> arena \n &aMVP: <mvp> \n&6---------------------------------"
+
+# the options for the arena inventory (/laser)
+laser:
+  name: "&5Laser Strike"
+  # the item if an arena can be joined, item is material:data, use \n for multiple lines of lore
+  join:
+    item: "35:5"
+    name: "&a<arena>"
+    lore: "&7Click to join &a<arena> \n&7State » &a<state> \n&7Players » &a<players>&7/&a<max>"
+  game:
+    item: "35:14"
+    name: "&c<arena>"
+    lore: "&7Unable to join \n&7State » &c<state> \n&7Players » &c<players>&7/&c<max>"
+  restart:
+    item: "35:15"
+    name: "&4<arena>"
+    lore: "&7Arena is restarting \n&7State » &4<state> \n&7Players » &4<players>&7/&4<max>"
+
+# the scoreboards
+scoreboard:
+  # placeholders for lobby scoreboard: <playersOnline> <kdr> <wins> <losses> <kills> <deaths>
+  lobby:
+    title: "&b&lLASERSTRIKE"
+    15: " "
+    14: "Players: <playersOnline>"
+    13: "  "
+    12: "Kdr: <kdr>"
+    11: "   "
+    10: "Wins: <wins>"
+    9: "    "
+    8: "Losses: <losses>"
+    7: "     "
+    6: "Kills: <kills>"
+    5: "      "
+    4: "Deaths: <deaths>"
+    3: "       "
+    2: "&7----------------"
+    1: "&7----------------"
+  # placeholders for game scoreboard: <arena> <playerKills> <killstreak> <blueLives> <greenLives>
+  game:
+    title: "&6&lLASERSTRIKE"
+    15: " "
+    14: "Arena: <arena>"
+    13: "  "
+    12: "Kills: <playerKills>"
+    11: "   "
+    10: "Killstreak: <killstreak>"
+    9: "    "
+    8: "Blue lives: <blueLives>"
+    7: "     "
+    6: "Green lives: <greenLives>"
+    5: "&7----------------"
+    4: "&7----------------"
+    3: "&7----------------"
+    2: "&7----------------"
+    1: "&7----------------"
+
+# the arena signs
+sign:
+  1: "&7[&5Laser Strike&7]"
+  2: "&0<arena>"
+  3: "&5<state>"
+  4: "&0Players » &5<players>&0/&5<max>"
+
+perks:
+  invisibilityTime: 10
+  invincibilityTime: 10
+  # the prefix before the player's nametag
+  invincibilityTag: "&7[&cI&7] &c"
